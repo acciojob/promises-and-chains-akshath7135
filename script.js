@@ -3,10 +3,6 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 
     const name = document.getElementById('name').value;
     const age = parseInt(document.getElementById('age').value);
-		if (age === '' || name === '') {
-        alert('Please enter valid details.');
-        return false;
-      }
     const votingPromise = new Promise((resolve, reject) => {
         setTimeout(() => {
             if (age > 18) {
